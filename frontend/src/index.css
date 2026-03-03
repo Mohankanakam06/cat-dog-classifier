@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-main font-sans antialiased overflow-hidden h-screen selection:bg-accent-primary selection:text-white;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent-primary/30 rounded-full hover:bg-accent-primary/50 transition-colors;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-black/40 border border-white/10 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-xl bg-bg-secondary/80 border border-border shadow-2xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary;
+  }
+}

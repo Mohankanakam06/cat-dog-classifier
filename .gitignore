@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packages
+venv/
+env/
+.env
+
+# Logs and databases
+*.log
+misclassified_images/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# AI Models (unless you want them committed, use LFS for big ones)
+# *.h5
+# *.keras
