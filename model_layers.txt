@@ -1,0 +1,25 @@
+Layer: vgg16, Type: <class 'keras.src.models.functional.Functional'>
+  Sub-model: vgg16
+    Sub-layer: input_layer_5, Type: <class 'keras.src.layers.core.input_layer.InputLayer'>
+    Sub-layer: block1_conv1, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block1_conv2, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block1_pool, Type: <class 'keras.src.layers.pooling.max_pooling2d.MaxPooling2D'>
+    Sub-layer: block2_conv1, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block2_conv2, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block2_pool, Type: <class 'keras.src.layers.pooling.max_pooling2d.MaxPooling2D'>
+    Sub-layer: block3_conv1, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block3_conv2, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block3_conv3, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block3_pool, Type: <class 'keras.src.layers.pooling.max_pooling2d.MaxPooling2D'>
+    Sub-layer: block4_conv1, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block4_conv2, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block4_conv3, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block4_pool, Type: <class 'keras.src.layers.pooling.max_pooling2d.MaxPooling2D'>
+    Sub-layer: block5_conv1, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block5_conv2, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block5_conv3, Type: <class 'keras.src.layers.convolutional.conv2d.Conv2D'>
+    Sub-layer: block5_pool, Type: <class 'keras.src.layers.pooling.max_pooling2d.MaxPooling2D'>
+Layer: flatten_4, Type: <class 'keras.src.layers.reshaping.flatten.Flatten'>
+Layer: dense_8, Type: <class 'keras.src.layers.core.dense.Dense'>
+Layer: dropout_3, Type: <class 'keras.src.layers.regularization.dropout.Dropout'>
+Layer: dense_9, Type: <class 'keras.src.layers.core.dense.Dense'>

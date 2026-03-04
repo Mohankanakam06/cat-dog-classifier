@@ -42,6 +42,20 @@ try:
         if hasattr(keras, 'layers') and hasattr(keras.layers, 'Flatten'):
             keras.layers.Flatten.compute_output_spec = wrapper_compute_output_spec
         print("Monkey patched Flatten.compute_output_spec for compatibility")
+
+    # Also patch Flatten.call to handle list inputs
+    original_flatten_call = Flatten.call
+
+    def wrapper_flatten_call(self, inputs):
+        if isinstance(inputs, (list, tuple)):
+            inputs = inputs[0]
+        return original_flatten_call(self, inputs)
+
+    Flatten.call = wrapper_flatten_call
+    if hasattr(keras, 'layers') and hasattr(keras.layers, 'Flatten'):
+        keras.layers.Flatten.call = wrapper_flatten_call
+    print("Monkey patched Flatten.call for compatibility")
+
 except Exception as e:
     print(f"Warning: Failed to patch Flatten: {e}")
 

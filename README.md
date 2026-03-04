@@ -62,7 +62,7 @@ To store your code safely and share it with others, you should push it to GitHub
    git add .
    git commit -m "Initial commit: Added frontend, backend, and AI model"
    git branch -M main
-   git remote add origin https://github.com/Mohan-demo/cat-dog-classifier.git
+   git remote add origin https://github.com/Mohankanakam06/cat-dog-classifier.git
    git push -u origin main
    ```
 
